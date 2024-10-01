@@ -1,0 +1,43 @@
+.page1 {
+    background-color: #f4f4f4; /* Light background for the whole page */
+    font-family: Arial, sans-serif; /* Clean font for text */
+    padding: 20px; /* General padding */
+    min-height: 100vh; /* Ensure it fills the viewport height */
+}
+
+.useFetch_title,
+.post_data_title,
+.todo_data_title {
+    color: #333; /* Dark text for titles */
+    text-align: center; /* Center align titles */
+    margin-top: 20px; /* Space above titles */
+}
+
+.data_container {
+    max-width: 100%; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space between containers */
+}
+
+pre {
+    background-color: #eaeaea; /* Light gray background for JSON */
+    padding: 15px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners for JSON block */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    white-space: pre-wrap; /* Wrap text as needed */
+    word-wrap: break-word; /* Break long words */
+}
+
+@media (max-width: 600px) {
+    .data_container {
+        padding: 10px; /* Less padding on small screens */
+    }
+
+    pre {
+        font-size: 12px; /* Smaller font size for JSON */
+    }
+}
